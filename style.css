@@ -1,0 +1,139 @@
+
+    body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    }
+    .navigation {
+        display: flex; /*Use flexbox to arrange in a row*/
+        align-items: center; /*vertically center the elements*/
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /*adds a subtle shadow below navigation*/
+        position: relative; /*to position child elmnts absolutely*/
+        z-index: 10; /* to keep nav bar at top*/
+    }
+    .header-logo {
+        position: relative;
+        left: 10px;
+    
+    }
+    .header-logo img {
+        width: 190px;
+        height: auto;
+    }
+    .header-logo img:hover {
+        filter: brightness(1.1);
+        cursor: pointer;
+    }
+    .header-contents {
+        display: flex;
+        justify-content: flex-end; /*align items to the right end*/
+        align-items: center; /* vertically align items within container*/
+        width: 100%;
+        gap: 64px; /* adds space within elements*/
+    }
+    .header-contents ul {
+        display: flex;
+        gap: 32px;
+        flex-direction: row; /* to make sure elements laid out horizontally*/
+        list-style: none;
+        text-align: center; /* centers the txt inside each element*/
+        font-size: 13px;
+        position: relative;
+        left: -10px;
+    }
+    .header-contents li {
+        align-items: center;  
+    }
+
+    .header-contents a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: 430;
+    
+    }
+    .header-contents a:hover {
+        color: #555555;
+        cursor: pointer;
+    }
+
+    .header-contents li.councelling a {
+        color:white;
+        background-color: orange;
+        padding: 10px;
+        border-radius: 15px;
+        position: relative;
+        top:7px;
+    
+    }
+    .header-contents li.councelling a:hover {
+        background-color: #ffcc99;
+        cursor: pointer;
+    }
+    .leftup {
+        position: absolute;
+        left: 10px;
+        top: 80px;
+        z-index: 1;
+    }
+
+    .main {
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        z-index: 1;
+    }
+    .fill {
+        position: absolute;
+        left:-30px;
+        top: 190px;
+        z-index: 1;
+    }
+
+    .right {
+        position:absolute;
+        right: 10px;
+        bottom: 10px;
+        z-index: 1;
+    }
+    .badge {
+        position: absolute;
+        z-index: 5;
+        top: 25%;
+        left:50%;
+
+    }
+    .headline {
+        font-size: 43px;
+        position: absolute;
+        bottom: 38%;
+        left: 17%;
+        z-index: 6;
+        font-weight:650;
+        line-height: 1.6;
+    }
+    .councelling-two {
+        display: inline-block;
+        text-decoration: none;
+        position: absolute;
+        font-size: 23px;
+        bottom: 30%;
+        left:17%;
+        z-index: 6;
+        background-color: orange;
+        padding: 15px 100px;
+        border-radius: 30px;
+        color: white;
+        font-weight: 500;
+    }
+    .councelling-two:hover {
+        background-color: #ffcc99;
+        cursor: pointer;
+    }
+    .description {
+        position: absolute;
+        font-size: 12px;
+        font-weight: 250;
+        z-index: 6;
+        bottom: 23%;
+        left: 17%;
+    }
