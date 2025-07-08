@@ -4,6 +4,18 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const hamburger = document.querySelector('.hamburger-menu');
+                const mobileMenu = document.querySelector('.mobile-menu');
+
+                hamburger.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('open');
+                });
+            });
+        </script>
+
         <title>ポテパン模写</title>
     </head>
     <body>
@@ -13,6 +25,24 @@
                     <img src="header-logo.webp">
                 </a>
             </div>
+
+            <!--hamburger menu-->
+            <div class="hamburger-menu" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="https://camp.potepan.com/content"><span>CONTENT</span><span>学習内容</span></a></li>
+                    <li><a href="https://camp.potepan.com/interview"><span>INTERVIEW</span><span>受講者の声</span></a></li>
+                    <li><a href="https://camp.potepan.com/blogs"><span>BLOG</span><span>ブログ</span></a></li>
+                    <li><a href="https://camp.potepan.com/recruit"><span>RECRUIT</span><span>採用企業様</span></a></li>
+                    <li><a href="https://camp.potepan.com/training"><span>TRAINING</span><span>企業研修</span></a></li>
+                    <li class="councelling"><a href="https://camp.potepan.com/contact">無料カウンセリング</a></li>
+                </ul>
+            </nav>
+
             <div class="header-contents">
                 <ul>
                     <li><a href="https://camp.potepan.com/content">CONTENT<br>学習内容</a></li>
@@ -26,19 +56,23 @@
             </div>
         </header>
 
-        <main>
-            <img class="main" src="main-visual.webp" alt="main visual" width="775" height= auto >
-            <img class="leftup" src="left-rectangle.svg" alt="leftup rectangle" width="348" height="348">
+        <div class="main-content">
+            <img class="main" src="main-visual.webp" alt="main visual" >
+            <img class="leftup" src="left-rectangle.svg" alt="leftup rectangle">
             <img class="fill" src="fill-rectangle.svg" alt="curve rectangle">
-            <img class="right" src="right-rectangle.svg" alt="right rectangle" width="348" height="348">
+            <img class="right" src="right-rectangle.svg" alt="right rectangle">
             <img class="badge" src="badge.svg" alt="badge image">
+            <div class="main-image-wrapper">
+                <img class="main-responsive" src="main-responsive.webp" alt="potepan-image">
+                <img class="badge-responsive" src="badge.svg" alt="badge badge-responsive">
+            </div>
 
-            <p class="headline">Al搭載カリキュラムと<br>豊富な提携求人で<br>最速でWebエンジニアに</p>
+            <p class="headline">実践的カリキュラムと<br>豊富な提携求人で<br>確実にITエンジニアへ</p>
             
             <a href="https://camp.potepan.com/contact" class="councelling-two">まずは無料カウンセリングへ</a>
             <p class="description">※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査<br>
                 (2020年5月22日~25日)」より全国の22~49歳の男女691名へのインターネット調査</p>
             
-        </main>
+            </div>
     </body>
 </html>
